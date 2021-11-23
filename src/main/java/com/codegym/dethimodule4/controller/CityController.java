@@ -1,7 +1,7 @@
 package com.codegym.dethimodule4.controller;
 
 import com.codegym.dethimodule4.model.City;
-import com.codegym.dethimodule4.service.ICityService;
+import com.codegym.dethimodule4.service.city.ICityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

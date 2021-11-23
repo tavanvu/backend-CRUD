@@ -1,4 +1,4 @@
-package com.codegym.dethimodule4.service;
+package com.codegym.dethimodule4.service.country;
 
 import com.codegym.dethimodule4.model.Country;
 import com.codegym.dethimodule4.repository.ICountryRepository;
@@ -26,16 +26,16 @@ public class CountryService implements ICountryService{
 
     @Override
     public Optional<Country> findById(Long id) {
-        return Optional.empty();
+        return countryRepository.findById(id);
     }
 
     @Override
     public Country save(Country country) {
-        return null;
+        return countryRepository.save(country);
     }
 
     @Override
     public void remove(Long id) {
-
+        countryRepository.deleteById(id);
     }
 }
